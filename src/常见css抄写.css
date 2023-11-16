@@ -1,0 +1,101 @@
+.container {
+    /* 基本大小, 注意span/a/link因为是行内元素无法设置width/height */
+    width: 200px;
+    width: 20%; /* 父级元素的20% */
+    width: 20vw; /* 屏幕宽度的20% */
+    height: 100px;
+    height: 20vh; /* 屏幕高度的20% */
+    width: calc(20vw - 20px + 10%); /* 宽度为: 计算出屏幕宽度的20%减去20px在加10%父元素宽度 */
+
+    background: yellow;
+
+    /* 以下四个样式让元素xy轴全部居中 */ 
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    /* 定位(用于制造一些偏离距离) */ 
+    position: relative; /* 没太大用,主要是用来限制下述定位 */ 
+    position: absolute; /* 绝对定位,脱离父元素直到碰到另一个position: absolute/relative */ 
+    position: fixed;  /* 相对窗口定位, 即使有滚动条也永远出现在屏幕内 */ 
+
+    /* 定位的距离, 必须要设置上述的定位才生效 */ 
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+
+    /* 边框 厚度1, 样式为实心, 颜色为黑色 */
+    border: 1px solid black;
+    border-radius: 5px; /* 圆角 */
+
+    /* 外边距 */
+    margin: 2px;  /*上右下左都为2 */
+    margin: 1px 2px 3px 4px; /*上1右2下3左4 */
+    margin: 0 auto;  /* x轴居中对齐 */
+
+
+    /* 内边距 */
+    padding: 2px; /*上右下左都为2 */
+    padding: 1px 2px 3px 4px; /*上1右2下3左4 */
+
+
+    /* 字体类 */
+    color: #121341; /* 字体颜色 */
+    font-weight: 600; /* 字体粗细,只有100,200,300...., 900取值, */
+    font-size: 20px;
+
+
+    /* 其他 */
+    cursor: pointer; /* 鼠标悬浮上去会变成可点击小手 */
+    opacity: 0.1; /* 透明度 取值0-1 */
+    transition: width 1s; /* 动态变化(动画), 第一个值为变化的属性名字,第二个为时间 */
+    overflow: hidden; /* 超出父元素隐藏 */
+    overflow: scroll; /* 超出父元素出滚动条 */
+    display: none; /* 使得元素消失 */
+    z-index: 10000; /* 当元素重叠时, 谁展示在上层 */
+}
+
+/* 选择器抄写 */
+
+div { /* 选中所有div */
+  opacity: 0.1;
+}
+button+button { /* 相邻的两个button */
+  opacity: 0.1;
+}
+div > button { /* div下第一层的button */
+  opacity: 0.1;
+}
+div button { /* div下任意层的button */
+  opacity: 0.1;
+}
+div,button{ /* 选中所有div和所有button */
+  opacity: 0.1;
+}
+.dick { /* class选择器, 则class叫做dick (不是.dick) */
+  opacity: 0.1;
+}
+
+#dick { /* id选择器, 则id叫做dick (不是#dick) */
+  opacity: 0.1;
+}
+
+div.dick{ /* 组合上述div和.dick, 表示同时满足两者 */
+  opacity: 0.1;
+}
+
+div:hover {  /* :hover, 添加到任意选择器最后面, 使得当鼠标移上去产生下述样式效果 */
+  opacity: 0.1;
+}
+
+#dick>div button:hover {  /* 一个较为复杂的选择器, 不解释从左到右阅读理解即可 */
+  opacity: 0.1;
+}
+
+button+button::before {
+  content: " ";
+
+  border-left: 1px splid #121341;
+}

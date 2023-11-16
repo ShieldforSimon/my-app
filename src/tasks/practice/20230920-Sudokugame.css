@@ -1,0 +1,15 @@
+.sudokugamearr{
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+    height: 900px;
+    background-color: aqua;
+    border: 0.5px solid grey;
+}
+
+.block{
+    width: 33%;
+    height: 33%;
+    font-size: 200px;
+    border: 0.5px solid grey;
+}

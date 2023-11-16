@@ -1,0 +1,15 @@
+button{
+    background-color: blue;
+}
+.left-child{
+    width: 200px;
+}
+.right-child{
+    width:200px
+}
+.father{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+      *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+      .parent {
+          margin-left: 40px;
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          width:fit-content;
+          align-items: center;
+      }
+    .inputValue{
+        width: 300px;
+        height: 40px;
+        border-radius: 18px;
+        outline: none;
+        padding-left: 20px;
+        position: absolute;
+        border: 1px solid #ccc;
+        transition: width 3s;
+    }
+    .sub {
+        position: absolute;
+        left: 50vw;
+        transform: translateX(-250px);
+        margin-top: 10px;
+        margin-left: 10px;
+        height: 20px;
+    }
+  </style>
+  <script>
+    function onFocus(){
+      const input = document.getElementById("inputValue").value;
+      setTimeout(()=>{
+        if(!input){
+          alert("需要帮助吗")
+        }},3000)
+    }
+
+    function onBlur(){
+      document.getElementById("inputValue").value="";
+    }
+  </script>
+</head>
+<body>
+<form action="" class="parent">
+    <input type="text" class="inputValue" name="inputValue" placeholder="input search text"  onfocus={onFocus();this.style.width="500px"} onblur={onBlur();this.style.width="300px"}>
+  <img src="logo512.png" alt="">
+</form>
+</body>
+</html>

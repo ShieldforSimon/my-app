@@ -26,7 +26,10 @@ const ButtonItem = styled.button`
 export function ButtonSegment() {
   const [checkedDay, setCheckedDay] = useState<string | null>(null);
   const optionData = ["daily", "weekly", "monthly", "quarterly", "yearly"].map(
-    (item) => ({ label: item, value: item }),
+    (item) => ({
+      label: item,
+      value: item,
+    }),
   );
   return (
     <AllFrame>

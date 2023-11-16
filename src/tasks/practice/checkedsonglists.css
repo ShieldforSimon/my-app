@@ -1,0 +1,74 @@
+.allframe{
+    display: flex;
+    flex-direction: column;
+    width:1000px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+  }
+  .song {
+    display: flex;
+  }
+  .first-song {
+     border: 1px solid salmon;
+  }
+  .playingline{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-start;
+    width: 400px;
+    font-size: 15px;
+    background-color: aqua;
+  }
+
+  .tobeplayed{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+  } */
+
+  .tobeplayedline{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-start;
+    width: 400px;
+    font-size: 15px;
+  }
+
+  
+  .name{
+    display: flex;
+    flex-direction:column;
+    align-items:flex-start;
+    width: 250px;
+  }
+
+  .owner{
+    display: flex;
+    flex-direction:column;
+    align-items:flex-start;
+    width: 150px;
+    justify-content: flex-start;
+  }
+
+  .changetotop{
+    display: flex;
+    flex-direction:column;
+    align-items:flex-start;
+    width: 100px;
+  }
+  .next{
+    display: flex;
+    flex-direction:column;
+    align-items:flex-start;
+    width: 100px;
+  }
+  .delete{
+    display: flex;
+    flex-direction:column;
+    align-items:flex-start;
+    width: 100px;
+  }
+

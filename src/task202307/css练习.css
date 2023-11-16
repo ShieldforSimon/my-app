@@ -1,0 +1,24 @@
+.comps{
+  display: flex;
+  justify-content: space-evenly;
+  width:fit-content;
+  
+}
+
+.comp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4px;
+  border:none;
+  font-size: 40px;
+  border-radius: 10px;
+  width:150px;
+  color:black; 
+  cursor: pointer;
+  transition: backgroundColor 1s;
+}
+.comp:hover{
+  background-color: red;
+}
+

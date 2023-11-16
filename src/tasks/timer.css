@@ -1,0 +1,29 @@
+.h1{
+    background-color:grey;
+    border:3px solid ;
+    border-radius: 50%;
+    border-width: 4px;
+    border-color: #b4b8de;
+    color: grey;
+    height: 150px;
+    width: 150px;
+}
+.h21{
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left:22px;
+    margin-top: 60px;
+    font-weight:bolder;
+    color: white;
+    
+}
+.h22{
+    align-items: center;
+    font-size: 15px;
+    margin-left:55px;
+    margin-top: 20px;
+    font-weight: 20px;
+    color: white;
+    
+}
