@@ -55,6 +55,9 @@
     overflow: scroll; /* 超出父元素出滚动条 */
     display: none; /* 使得元素消失 */
     z-index: 10000; /* 当元素重叠时, 谁展示在上层 */
+    backdrop-filter: blur(10px); /* 磨玻璃 */
+    box-shadow: 0 0 0 red; /* 阴影表示,正为下右,负为上左 横向 竖向 偏移距离 颜色 */
+
 }
 
 /* 选择器抄写 */
@@ -94,8 +97,10 @@ div:hover {  /* :hover, 添加到任意选择器最后面, 使得当鼠标移上
   opacity: 0.1;
 }
 
-button+button::before {
+button+button::before {/* 相邻选择器 */
   content: " ";
 
-  border-left: 1px splid #121341;
+  border-left: 1px solid #121341;
 }
+button[a="fdf"]{}  /* 属性选择器 */
+*{}/* 匹配所有 */

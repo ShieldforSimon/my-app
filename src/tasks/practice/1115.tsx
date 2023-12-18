@@ -42,7 +42,9 @@ class One extends Result {
     };
   }
 }
-
+export function Apppppp(): any {
+  return <div>dsd</div>;
+}
 // - [ ] 写一个class，Tree用于描述一个树形结构如图，至少具有一个children数组属性存储了它，下一层的所有子元素，
 // 所有子元素依然是一个Tree，且具有一个add方法添加一个子元素，具有一个构造函数，可以有一个参数传入初始子节点
 // - [ ] Tree上具有一个forEachNode方法用于遍历它下一层的所有子元素，具有一个deepForEachNode遍历它下属所有元素
